@@ -1,0 +1,27 @@
+print("==== Masukan Data : =====")
+Nama = input ("Masukan Nama Mahasiswa:")
+NIM = input ("Masukan NIM Mahasiswa : ")
+Nilai = int (input("Masukan Nila Ujian (0-100) :"))
+
+print()
+
+print("Nama  :", Nama, type(Nama))
+print("NIM   : ", NIM, type(NIM))
+print("Nilai :", Nilai, type(Nilai))
+
+print()
+print ("Hasil Evaluasi :")
+print ("Mahasiswa :", Nama)
+print ("NIM ", NIM)
+print ("Nilai Ujian", Nilai)
+
+if Nilai > 85 and Nilai<= 100 :
+    print ("Kategori Nilai : A (Sangat Baik)")
+elif Nilai >= 75 and Nilai < 85:
+    print ("Kategori Nilai : B (Baik)")
+elif Nilai >= 60 and Nilai < 75:
+    print ("Kategori Nilai : C (Cukup)")
+elif Nilai >= 40 and Nilai <60 :
+    print ("Kategori Nilai : D (Kurang)")
+else :
+    print ("Kategori Nilai : E (Sangat Kurang)")
